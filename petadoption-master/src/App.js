@@ -4,11 +4,7 @@ import Home from './pages/Home';
 import Auth from './pages/Auth';
 import Main from './pages/Main';
 import Fav from './pages/Fav';
-import Donate from './pages/Donate';
-import Cart from './pages/Cart';
-import Wishlist from './pages/Wishlist';
-import Checkout from './pages/Checkout';
-import Personalinfo from './pages/Personalinfo';
+import Donate from './pages/Donate';import './App.css';
 import DonatedList from './pages/DonatedList';
 
 function App() {
@@ -21,23 +17,8 @@ function App() {
         <Route path='/register' element={<Auth register={"register"}/>}/>
         <Route path='/fav' element={<Fav/>}/>
         <Route path='/donate' element={<Donate/>}/>
-        <Route path='/cart' element= {<Cart/>}/>
-        <Route path='/wishlist' element= {<Wishlist/>}/>
-        <Route path='/checkout' element={<Checkout/>}/>
-        <Route path='/info' element={<Personalinfo/>}/>
         <Route path='/donated' element={<DonatedList/>}/>
-
-
-
-
-
-
-
-
       </Routes>
-     
-    
-      
     </div>
   );
 }

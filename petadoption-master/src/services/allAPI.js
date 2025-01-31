@@ -22,10 +22,7 @@ export const MainProjectApi = async(searchKey)=>{
     return await commonAPI("GET",`${BASE_URL}/project/main-project?search=${searchKey}`,'','')
 }
 
-//5) get products
-export const productAPI = async(searchCart)=>{
-    return await commonAPI("GET",`${BASE_URL}/product/add?search=${searchCart}`,'','')
-}
+
 
 //6) get Donor project
 
